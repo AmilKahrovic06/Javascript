@@ -7,7 +7,7 @@
 // undefined
 // null
 // Symbol
-//primitivni(gore)
+
 
 // referentni:
 // Array
