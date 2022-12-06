@@ -49,6 +49,11 @@ h=2
     h++;
  }
 
+ z="";
+ for(i=1;i<5;i++){
+   z+=i;
+   console.log(z);
+ }
  console.log("------------------------------------------------------");
 //  Write a program in C to make such a pattern like right angle triangle with a number which will repeat a number in a row.
 
