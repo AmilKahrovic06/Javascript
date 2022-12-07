@@ -40,14 +40,14 @@
 // 12
 // 123
 // 1234
-broj=1;
-h=2
- for(i=1;i<=5;i++){
-    debugger;
-    console.log(broj);
-    broj=broj*10+h;
-    h++;
- }
+// broj=1;
+// h=2
+//  for(i=1;i<=5;i++){
+//     debugger;
+//     console.log(broj);
+//     broj=broj*10+h;
+//     h++;
+//  }
 
  z="";
  for(i=1;i<5;i++){
@@ -65,14 +65,25 @@ h=2
 //  4444
 
 
- n=1
-  for(i=1;i<=5;i++){
-     for(j=1;j<=i;j++){
-         console.log(i);
-     }
-     console.log("\n");
-  }
+//  n=1
+//   for(i=1;i<=5;i++){
+//      for(j=1;j<=i;j++){
+//          console.log(i);
+//      }
+//      console.log("\n");
+//   }
 
+
+  brojac=1;
+  
+  for(i=1;i<=5;i++){
+   ispis="";
+   for(j=1;j<=i;j++){
+      ispis+=brojac;
+   }
+   console.log(ispis);
+   brojac++;
+  }
 
 
 
