@@ -71,22 +71,45 @@
 // console.log(max);
 // console.log(min);
 
-broj=[2,6,4,3,8];
-nep=[];
-par=[];
+// broj=[2,6,4,3,8];
+// nep=[];
+// par=[];
 
-for(i=0;i<broj.length;i++){
-    if(broj[i]%2==0){
-        par.push(broj[i]);
-    }else{
-        nep.push(broj[i]);
-    }
-}
-console.log(par);
-console.log(nep);
+// for(i=0;i<broj.length;i++){
+//     if(broj[i]%2==0){
+//         par.push(broj[i]);
+//     }else{
+//         nep.push(broj[i]);
+//     }
+// }
+// console.log(par);
+// console.log(nep);
+
+// Domaći: 
+//  Izracunate prosecnu vrednost niza, ali da izostavite najveci i najmanji element.
 
 
-
-
-
+broj=[1,2,3,4,5];
+ max=broj[0];
+ min=broj[0];
+ for(i=0;i<broj.length;i++){
+     if(max<broj[i]){
+         max=broj[i];
+     }
+     if(min>broj[i]){
+         min=broj[i];
+     }
+ }
+ console.log(broj);
+ console.log("Maximum je:",max);
+ console.log("Minimum je:",min);
+   broj.pop(max);
+   broj.shift(min);
+  suma=0;
+  for(i=0;i<broj.length;i++){
+     suma+=broj[i];
+  }
+  console.log(broj);
+ console.log("Suma:",suma,"/",broj.length);
+ console.log("Prosecan broj elemenata bez miniimuma i maximuma je:",suma/broj.length);
 
