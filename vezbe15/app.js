@@ -4,8 +4,6 @@
 
 // console.log("Duzina zadnje reci u nizu je:",niz[niz.length-1].length);
 
-
-
 // str="Ja idem u skolu";
 // var p=0;
 // for(i=0;i<str.length;i++){
@@ -57,7 +55,6 @@
 // console.log(max1);
 // console.log(max2);
 
-
 //
 
 // niz=[12,45,23,67,33,55,90,99,20];
@@ -86,16 +83,48 @@
 // console.log(niz2);
 
 //
-n="";
+// n="";
 
-for(i=1;i<5;i++){
-    razmak="";
-    for(j=1;j<5;j++){
-       razmak+=" ";
-    }
-    n+="* ";
-    console.log(razmak+n);
+// for(i=1;i<5;i++){
+//     razmak="";
+//     for(j=1;j<5;j++){
+//        razmak+=i;
+//     }
+
+//     console.log(razmak);
+// }
+
+//      1
+//     2 2
+//    3 3 3
+//   4 4 4 4
+debugger;
+
+for (let i = 1; i <= 5; i++) {
+  let red = "";
+  for (let j = 1; j <= 5 - i; j++) {
+    red += "  ";
+  }
+  for (let k = 1; k <= i; k++) {
+    red += i + "   ";
+  }
+  console.log(red);
 }
 
-//
-      
+//     1
+//    2 3
+//   4 5 6
+//  7 8 9 10
+
+let broj = 1;
+for (let i = 1; i <= 5; i++) {
+  let red = "";
+  for (let j = 1; j <= 5 - i; j++) {
+    red += "  ";
+  }
+  for (let k = 1; k <= i; k++) {
+    red += broj + "   ";
+    broj++;
+  }
+  console.log(red);
+}
