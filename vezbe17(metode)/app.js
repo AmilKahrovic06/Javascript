@@ -69,8 +69,8 @@ const exampleSplit = "Danas je drugi cas";
 console.log(exampleSplit.split(" "));
 //*join()-   niz prebacuje u string
 
-const exampleJoin = "Danas je drugi cas";
-console.log(exampleJoin.join("-"));
+// const exampleJoin = "Danas je drugi cas";
+// console.log(exampleJoin.join("-"));
 
 //*replace-da zameni neki element
 let examplereplace = "Ucimo da brojimo";
