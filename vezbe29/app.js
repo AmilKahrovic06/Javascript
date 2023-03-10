@@ -152,11 +152,6 @@ fetch("https://jsonplaceholder.typicode.com/todos/1", {
   .then((response) => response.json())
   .then((data) => console.log(data));
 
-const podaci = {
-  Ime: "Nisam ja",
-  Prezime: "neko drugo",
-  Skola: "Da",
-};
 fetch("https://run.mocky.io/v3/e8d794ad-aee6-4df4-91bb-d35954225d21")
   .then((odgovor) => odgovor.json())
   .then((pod) => console.log(pod));
