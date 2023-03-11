@@ -161,6 +161,8 @@ fetch("https://run.mocky.io/v3/e8d794ad-aee6-4df4-91bb-d35954225d21")
 fetch("https://jsonplaceholder.typicode.com/todos/1", {
   method: "DELETE",
 }).then((response) => console.log("Odgovor sa statusom", response.status));
+
+/////////////////////////////////////////////////////////////////////////////////////////////
 // async/await olaksava pisanje promisa
 
 // async cini da funckija vrati promis
