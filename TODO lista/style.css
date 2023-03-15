@@ -1,0 +1,11 @@
+.zadaci{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+.item{
+    width: 300px;
+    height: 50px;
+    border: 1px solid white;
+}
