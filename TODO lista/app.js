@@ -29,15 +29,20 @@ btn.addEventListener("click", () => {
     check.style.marginLeft = "50%";
     check.style.marginTop = "-6.5%";
     unos.value = "";
+
+    console.log(check.checked);
     if (check.checked) {
       novielement.style.color = "green";
     }
-  }
-});
-check.addEventListener("change", function () {
-  let check = document.querySelector(".zadaci input[type=checkbox]");
-  if (check.checked) {
-    novielement.style.textDecoration = "line-through";
+
+    check.addEventListener("change", function () {
+      let check = document.querySelector(".zadaci input[type=checkbox]");
+      if (check.checked) {
+        novielement.style.textDecoration = "line-through";
+      } else {
+        novielement.style.textDecoration = "none";
+      }
+    });
   }
 });
 

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ h1 {
+     color: orangered;
+     font-size: 45px;
+     text-align: center;
+ }
+
+.tabela{
+    margin-left: 40%;
+    margin-top: 8%;
+}
+button{
+    width: 2cm;
+    height: 2cm;
+    background-color: #00BFFF;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+.ispocetka{
+    width: 2cm;;
+    height: 0.5cm;
+    font-size:x-small;
+    margin-left: 45%;
+    margin-top: 2%;
+}
+
+
