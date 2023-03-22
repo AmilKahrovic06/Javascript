@@ -15,6 +15,9 @@ table {
     height: 300px;
     background-color: white;
     border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 38px 12px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 38px 12px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 38px 12px rgba(0, 0, 0, 0.75);
 }
 
 .cell {
@@ -27,6 +30,7 @@ table {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 .cell:hover{
@@ -47,10 +51,16 @@ table {
     color: black;
     cursor: pointer;
     border-radius: 5px;
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
+    box-shadow: 0 9px #999;
 }
 
 .btn:hover {
     background-color: black;
     color: red;
+}
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
