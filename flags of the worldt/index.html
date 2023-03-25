@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Države</title>
+    <style>
+        img {
+            width: 30px;
+            height: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Država</th>
+                <th>Zastava</th>
+            </tr>
+        </thead>
+        <tbody id="countries">
+        </tbody>
+    </table>
+
+    <script>
+        async function getCountries() {
+            try {
+                const response = await fetch('https://restcountries.com/v3.1/all');
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        async function getCountryDetails(name) {
+            try {
+                const response = await fetch(`https://restcountries.com/v3.1/name/${name}`);
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        async function displayCountries() {
+            const countries = await getCountries();
+            const tbody = document.getElementById('countries');
+            countries.forEach(country => {
+                const tr = document.createElement('tr');
+                const tdName = document.createElement('td');
+                const tdFlag = document.createElement('td');
+                const imgFlag = document.createElement('img');
+                tdName.textContent = country.name.common;
+                imgFlag.src = country.flags.png;
+                tdFlag.appendChild(imgFlag);
+                tr.appendChild(tdName);
+                tr.appendChild(tdFlag);
+                tbody.appendChild(tr);
+
+                tr.addEventListener('click', async () => {
+                    const countryDetails = await getCountryDetails(country.name.common);
+                    const detailsWindow = window.open('', '_blank', 'width=500,height=500');
+                    detailsWindow.document.write(`
+            <h1>${countryDetails[0].name.common}</h1>
+            <img src="${countryDetails[0].flags.png}" alt="${countryDetails[0].name.common} flag">
+            <p>Capital: ${countryDetails[0].capital}</p>
+            <p>Population: ${countryDetails[0].population}</p>
+            <p>Region: ${countryDetails[0].region}</p>
+            <p>Subregion: ${countryDetails[0].subregion}</p>
+            <p>Languages: ${Object.values(countryDetails[0].languages).join(', ')}</p>
+            <p>Currencies: ${Object.values(countryDetails[0].currencies).join(', ')}</p>
+          `);
+                });
+            });
+        }
+
+        displayCountries();
+    </script>
+</body>
+
+</html>
