@@ -1,0 +1,26 @@
+ .country-card {
+     display: inline-block;
+     width: 250px;
+     height: 150px;
+     margin: 10px;
+     padding: 10px;
+     border-radius: 15px;
+    -webkit-box-shadow: -10px 10px 6px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -10px 10px 6px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -10px 10px 6px 0px rgba(0, 0, 0, 0.75);
+        background-color: aliceblue;
+        margin-left: 5%;
+ }
+
+ .flag {
+     display: block;
+     width: 130px;
+     height: 80px;
+     margin: 0 auto;
+    border: 1px solid black;
+ }
+
+ .country-name {
+     text-align: center;
+     margin-top: 25px;
+ }
