@@ -1,3 +1,6 @@
+ *{
+font-family: 'Quicksand', sans-serif;
+ }
  .country-card {
      display: inline-block;
      width: 250px;
@@ -10,6 +13,14 @@
         box-shadow: -10px 10px 6px 0px rgba(0, 0, 0, 0.75);
         background-color: aliceblue;
         margin-left: 5%;
+        transition: 0.3s ease-in-out;
+ }
+ .country-card:hover{
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 15px;
+    
+
  }
 
  .flag {
@@ -24,3 +35,4 @@
      text-align: center;
      margin-top: 25px;
  }
+ 
