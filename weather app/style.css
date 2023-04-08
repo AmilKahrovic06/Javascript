@@ -1,46 +1,63 @@
-*{
+* {
     font-family: 'Quicksand', sans-serif;
 }
-body{
-    background-color: blue;
+
+body {
+    background-color: rgb(116, 141, 209);
 }
-input{
+
+input {
     width: 500px;
     height: 30px;
     border-radius: 50px;
-    border:none;
+    border: 1px solid black;
     background-color: white;
-    margin-top: 8%;
+ 
+    font-size: large;
 }
-button{
+
+button {
     height: 30px;
-    margin-top: 8%;
+    border: 1px solid black;
     background-color: green;
     color: white;
     border-radius: 50px;
+    font-size: large;
+ 
 
-    border:none;
-    
     margin-left: 15px;
 }
-.pretraga{
+
+.pretraga {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
+    
 }
-.prikaz{
+
+.prikaz {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
-.grad{
-    margin-top: 30px;
+
+.prikaz {
+       margin-top: 1%;
+      margin-left: 30%;
+    
     background-color: white;
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     border-radius: 20px;
-    border: none;
+    border: 1px solid black;
     width: 500px;
+}
+
+h1 {
+    font-size: xx-large;
+    color: white;
+    text-decoration: underline;
+  
 }
