@@ -12,13 +12,3 @@ btn.onclick = () => {
     alert("Password is correct!");
   }
 };
-
-// function check() {
-//   console.log("NESTO BILOSTA");
-//   if (firstPassword != secondPassword) {
-//     document.createElement("p");
-//     document.querySelector("p").innerHTML = "Passwords do not match";
-//   } else {
-//     alert("Password is correct");
-//   }
-// }
