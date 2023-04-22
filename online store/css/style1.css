@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #0049B7;
+}
+img{
+    width: 250px;
+    height: 250px;
+
+}
+
+.price{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+
+}
+.productDetails{
+    margin: 6%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    width: fit-content;
+}

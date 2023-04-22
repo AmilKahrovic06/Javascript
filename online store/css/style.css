@@ -1,0 +1,148 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0049B7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: blue;
+    padding: 1rem;
+}
+
+nav h2 {
+    margin: 0 0 1rem;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+section {
+    padding: 1rem;
+}
+img{
+    width:200px;
+    height: 200px;
+}
+div{
+    border: 1px solid black;
+    padding: 40px;
+    width: 250px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 40px;
+    background-color: white;
+
+}
+#productsList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.details{
+
+font-family: Roboto, sans-serif;
+font-weight: 900;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 14px 37px;
+border: 2px solid #0066cc;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px 0px;
+transition : 500ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+.details:hover{
+
+transition : 500ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+
+#loginBtn {
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+}
+#loginBtn:hover {
+	background-color:#b34332;
+}
+#loginBtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+#logoutBtn {
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+}
+#logoutBtn:hover {
+	background-color:#b34332;
+}
+#logoutBtn:active {
+	position:relative;
+	top:1px;
+}
