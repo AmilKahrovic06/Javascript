@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url("https://media.giphy.com/media/3hvmlYNsOTFWE/giphy.gif");
     background-repeat: no-repeat;
@@ -78,7 +82,7 @@ h1{
     color:white;
 
     font-size: 30px;
-    margin-top: 20px;
+    padding-top: 20px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -98,7 +102,10 @@ h1{
 h2{
     color: white;
         font-size: 30px;
-        margin-top: 20px;
+        padding-top: 80px;
         text-align:start;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav{
+    background-color: #31EC56;
 }
