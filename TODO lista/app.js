@@ -1,49 +1,44 @@
-// let unos = document.querySelector(".inp");
-
-let glavni = document.querySelector(".zadaci");
-
-function Dodaj() {
-  let div = document.createElement("div");
-  div.className = "item";
-  glavni.appendChild(div);
-
-  // let check = document.createElement("input");
-  // check.type = "checkbox";
-  // glavni.appendChild(check);
-}
-const btn = document.querySelector("button");
-const unos = document.querySelector("input");
-const zadaci = document.querySelector(".zadaci");
-
-btn.addEventListener("click", () => {
-  if (unos.value === "") {
-    alert("Unesite nesto u input");
+let btn = document.getElementById('btn-add');
+let input = document.getElementById('input-task');
+let zadaci = document.getElementById('zadaci');
+btn.addEventListener('click', function() {
+  if (input.value === '') {
+  alert('Unesite zadatak u polje.');
   } else {
-    Dodaj();
-    let novielement = document.createElement("h3");
-    novielement.innerText = unos.value;
-    zadaci.appendChild(novielement);
-    let check = document.createElement("input");
-    check.type = "checkbox";
-    zadaci.appendChild(check);
-    check.style.marginLeft = "50%";
-    check.style.marginTop = "-6.5%";
-    unos.value = "";
+  let task = document.createElement('div');
+  task.className = 'task';
+  zadaci.appendChild(task);
+  let taskContent = document.createElement('div');
+  taskContent.className = 'task-content';
+  task.appendChild(taskContent);
 
-    console.log(check.checked);
-    if (check.checked) {
-      novielement.style.color = "green";
-    }
+  let taskCheckbox = document.createElement('input');
+  taskCheckbox.type = 'checkbox';
+  taskCheckbox.className = 'task-checkbox';
+  taskContent.appendChild(taskCheckbox);
 
-    check.addEventListener("change", function () {
-      let check = document.querySelector(".zadaci input[type=checkbox]");
-      if (check.checked) {
-        novielement.style.textDecoration = "line-through";
+  let taskText = document.createElement('span');
+  taskText.className = 'task-text';
+  taskText.textContent = input.value;
+  taskContent.appendChild(taskText);
+
+  let taskDelete = document.createElement('button');
+  taskDelete.className = 'task-delete';
+  taskDelete.textContent = 'Obriši';
+  task.appendChild(taskDelete);
+
+  input.value = '';
+
+  taskDelete.addEventListener('click', function() {
+      task.remove();
+  });
+
+  taskCheckbox.addEventListener('change', function() {
+      if (taskCheckbox.checked) {
+          taskText.style.textDecoration = 'line-through';
       } else {
-        novielement.style.textDecoration = "none";
+          taskText.style.textDecoration = 'none';
       }
-    });
-  }
+  });
+}
 });
-
-//domaci /teskt koji se dodaje na klik

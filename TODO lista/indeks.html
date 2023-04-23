@@ -3,16 +3,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <input type="text" >
-    <button class="btn" >Dodaj novi zadatak</button>
-    <div class="zadaci">
-        <h1 style="text-decoration: line-through;">Vasi zadaci:</h1>
+    <div class="container">
+        <h1>To do lista</h1>
+        <div class="input-group">
+            <input type="text" id="input-task" placeholder="Unesite zadatak...">
+            <button class="btn" id="btn-add">Dodaj novi zadatak</button>
+        </div>
+        <div class="zadaci" id="zadaci">
+            <h2 class="section-title">Vasi zadaci:</h2>
+        </div>
     </div>
-   
     <script src="app.js"></script>
 </body>
 </html>
